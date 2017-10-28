@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Acceuil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full>Inscription</button>
+
+  <ion-card *ngFor="let item of articles">
+    <img src="img/nin-live.png"/>
+    <ion-card-content>
+      <ion-avatar>
+        <img [src]="item.urlToImage">
+      </ion-avatar>
+      <ion-card-title>
+        {{item.author}}
+        </ion-card-title>
+      <p>
+        {{item.title}}
+      </p>
+      <i>
+        {{item.publishedAt}}
+      </i>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
