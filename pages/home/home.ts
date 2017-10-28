@@ -11,7 +11,7 @@ export class HomePage {
   	author : string,
 	description : string,
 	publishedAt : string,
-	title : string,
+	title : string, 
 	url : string,
 	urlToImage : string
   }[];
